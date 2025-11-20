@@ -111,3 +111,9 @@ NOT NULL DEFAULT 'student';
 ALTER TABLE students
 ADD COLUMN year_level VARCHAR(50) NOT NULL,
 ADD COLUMN section VARCHAR(50) NOT NULL;
+
+
+-- Modify Project Categories
+ALTER TABLE projects
+MODIFY COLUMN project_category 
+ENUM('AI/ML', 'Console Apps', 'Databases', 'Desktop Apps', 'Games', 'Mobile Apps', 'UI/UX Design', 'Web Development') NOT NULL;
